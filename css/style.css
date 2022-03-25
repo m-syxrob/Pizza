@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+}
+
+.row {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 2%;
+}
+
+.town,
+.time {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin: 0 20px;
+    align-items: center;
+}
+
+.logocart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+
+.cart {
+    align-items: center;
+}
+
+.logo {
+    align-items: center;
+}
+
+img {
+    width: auto;
+}
+
+.cart {
+    border: 1px solid transparent;
+    background: #FF7010;
+    margin: 0;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.cart>p {
+    margin: 0;
+
+    align-items: center;
+}
+
+.logo>p {
+    margin: 0;
+}
+
+.sale {
+    align-items: center;
+    text-align: center;
+}
+
+h5 {
+    margin: 0;
+}
+
+.saleblocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 5%;
+}
+
+.red {
+    color: red;
+}
+
+.cashback {
+    background: #E23535;
+    color: #fff;
+    padding-top: 7%;
+    padding-bottom: 1%;
+    border-radius: 12PX;
+    width: 300px;
+}
+
+.cashback>h2 {
+    padding: 0 10px;
+}
+
+.cashbackblocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkaddress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 0;
+}
+
+label {
+    border: 1px solid transparent;
+    color: #A5A5A5;
+    padding-left: 30px;
+}
+
+.checkadd {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.checkbtn {
+    border: 1px solid transparent;
+    background: #FF7010;
+    color: #fff;
+    border-radius: 6px;
+    padding: 1% 5%;
+}
+
+.pizzablocks,
+.sushiblocks,
+.zakuskiblocks,
+.desertiblocks,
+.cashbackblocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pizza1 {
+    display: block;
+    max-width: 300px;
+    margin: 0 3%;
+}
+
+.cashback {
+    display: block;
+    max-width: 300px;
+    margin: 0 1%;
+}
+
+.pizzabtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    align-items: center;
+}
+
+.pizza1btn {
+    border: 1px solid transparent;
+    padding: 2% 5%;
+    background: #FF7010;
+    color: #fff;
+    border-radius: 6px;
+}
+
+span {
+    color: #FF7010;
+
+
+}
+
+.pizza1 p {
+    margin: 0;
+
+}
+
+.swiper {
+    max-width: 1290px;
+}
+
+footer div>h4 {
+    font-size: 20px;
+    margin: ;
+}
+
+footer div>p {
+    font-size: 16px;
+    margin: 0;
+}
+
+footer>div {
+    line-height: 22px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.copyrig {
+    padding: 3%;
+}
+
+@media (max-width: 968px) {
+
+    .town,
+    .time {
+        display: block;
+        margin: 2% 0;
+
+    }
+
+    .town>p,
+    .time>p {
+        padding-bottom: 1%;
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 2%;
+    }
+
+}
