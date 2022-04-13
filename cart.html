@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cartstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logocart">
+                    <div class="logo">
+
+                        <img src="img/Group 152_logo.png" alt="">
+                    </div>
+                    <div class="saleblocks">
+                        <div class="sale red">
+                            <h5>Акции</h5>
+                        </div>
+                        <div class="sale">
+
+                            <h5>Пицца</h5>
+                        </div>
+                        <div class="sale">
+
+                            <h5>Пицца</h5>
+                        </div>
+                        <div class="sale">
+
+                            <h5>Пицца</h5>
+                        </div>
+                        <div class="sale">
+
+                            <h5>Пицца</h5>
+                        </div>
+                        <div class="sale">
+                            <h5>Пицца</h5>
+                        </div>
+
+                    </div>
+                    <div class="cart" onClick="card()">
+                        <p><img src="img/Group 94_cart.png" alt=""> 999 ₽ </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="yourorder">
+                    <h1>Ваш заказ</h1>
+                    <div class="order1">
+                        <img src="img/Rectangle 4PIZZAORDER_.png" alt="">
+                        <div class="description">
+                            <h3>Пепперони по-деревенски</h3>
+                            <p>Традиционное тесто, 23 см</p>
+                        </div>
+                        <div class="input-group">
+                            <button type="button" class="btn-plus" onClick="setPrice()">+</button>
+                            <input type="" name="" id="" class="form-control input" min="1" max="10" data-price="399">
+                            <button type="button" class="btn-minus">-</button>
+                        </div>
+                        <div class="cart-value">
+                            399 ₽
+                        </div>
+                    </div>
+                    <div class="order2">
+                        <img src="img/Rectangle 4PIZZAORDER_.png" alt="">
+                        <div class="description">
+                            <h3>Пепперони по-деревенски</h3>
+                            <p>Традиционное тесто, 23 см</p>
+                        </div>
+                        <div class="input-group">
+                            <button type="button" class="btn-plus btn-plus-1">+</button>
+                            <input type="" name="" id="" class="form-control input input-1" min="1" max="10"
+                                data-price="399">
+                            <button type="button" class="btn-minus btn-minus-1">-</button>
+                        </div>
+                        <div class="cart-value cart-value-1">
+                            399 ₽
+                        </div>
+                    </div>
+                </div>
+                <div class="promo">
+                    <div class="submit">
+                        <input type="text" placeholder="Промокод">
+                        <button type="button" class="btn-submit"><img src="img/PRomo_submiy.png" alt=""></button>
+                    </div>
+                    <div class="total-price">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="swiper">
+                    <h2>Добавить в заказу?</h2>
+                    <div class="dop swiper-wrapper">
+                        <div class="dop-cart swiper-slide">
+                            <img src="img/Rectangle 4_FRIES (2).png" alt="">
+                            <h4>Картофель из печи</h4>
+                            <p>Порция 95 г</p>
+                            <button type="submit">179 ₽</button>
+                        </div>
+                        <div class="dop-cart swiper-slide">
+                            <img src="img/Rectangle 4_FRIES (2).png" alt="">
+                            <h4>Картофель из печи</h4>
+                            <p>Порция 95 г</p>
+                            <button type="submit">179 ₽</button>
+                        </div>
+                        <div class="dop-cart swiper-slide">
+                            <img src="img/Rectangle 4_FRIES (2).png" alt="">
+                            <h4>Картофель из печи</h4>
+                            <p>Порция 95 г</p>
+                            <button type="submit">179 ₽</button>
+                        </div>
+                        <div class="dop-cart swiper-slide">
+                            <img src="img/Rectangle 4_FRIES (2).png" alt="">
+                            <h4>Картофель из печи</h4>
+                            <p>Порция 95 г</p>
+                            <button type="submit">179 ₽</button>
+                        </div>
+                        <div class="dop-cart swiper-slide">
+                            <img src="img/Rectangle 4_FRIES (2).png" alt="">
+                            <h4>Картофель из печи</h4>
+                            <p>Порция 95 г</p>
+                            <button type="submit">179 ₽</button>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="about">
+                    <h1>О вас</h1>
+                    <script src="jquery.js"></script>
+                    <script src="parsley.min.js"></script>
+
+                    <form id="demo-form" data-parsley-validate="">
+
+                        <div class="blocks">
+                            <div class="block-1"> <label for="fullname">Full Name * :</label>
+                                <input type="text" class="form-control" name="fullname" required=""
+                                    placeholder="Алексей">
+                            </div>
+                            <div class="block-1">
+                                <label for="email">Email * :</label>
+                                <input type="email" class="form-control" name="email" placeholder="mail@gmail.com"
+                                    data-parsley-trigger="change" required="">
+                            </div>
+                            <div class="block-1"> <label for="tel">Tel. * :</label>
+
+
+                                <input type="tel" class="form-control" name="tel" data-parsley-trigger="change"
+                                    required="" placeholder="+7">
+                            </div>
+                        </div>
+
+
+                    </form>
+                    <div class="delivery">
+                        <h1>Доставка</h1>
+                        <div class="delivery-buttons">
+                            <button class="btn-1">Доставка</button>
+                            <button class="btn-2">Самовывоз</button>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#demo-form').parsley().on('field:validated', function () {
+                                var ok = $('.parsley-error').length === 0;
+                                $('.bs-callout-info').toggleClass('hidden', !ok);
+                                $('.bs-callout-warning').toggleClass('hidden', ok);
+                            })
+                                .on('form:submit', function () {
+                                    return false; // Don't submit form for this demo
+                                });
+                        });
+                    </script>
+
+
+                    <script>
+                        $('#form').parsley();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>
